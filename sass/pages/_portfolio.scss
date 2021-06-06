@@ -1,0 +1,114 @@
+.buttons {
+  align-items: center;
+  background-color: $background-color-navigation;
+  padding-bottom: 50px;
+}
+
+.buttons__list {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button--projects {
+  color: $font-color-title;
+  background-color: $background-color-secondary;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+  transition-property: color, background-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    color: $font-color-logo-light;
+    background-color: $accent-color-blue;
+    cursor: pointer;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.cards {
+  align-items: center;
+  align-content: center;
+  padding-top: 25px;
+  background-color: $background-color-navigation;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards__item {
+  background-color: $font-color-logo-light;
+  border: 1px solid $border-color-primary;
+
+  &:not(:nth-child(n+7)) {
+    margin-bottom: 30px;
+  }
+
+  &:hover, &:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.cards__photo-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards__overlay {
+  /*content: ""*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $accent-color-blue;
+  transform: translateY(+100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.projects-cards-list-item-link {
+  &:hover .cards__overlay, &:focus .cards__overlay {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.cards__text {
+  color: $font-color-logo-light;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+}
+
+.cards__info {
+  padding: 20px 24px 19px;
+}
+
+.cards__header {
+  margin-bottom: 4px;
+  color: $font-color-title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cards__description {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}

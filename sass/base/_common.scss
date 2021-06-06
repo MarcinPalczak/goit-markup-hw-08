@@ -1,0 +1,56 @@
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  color: $font-color-primary;
+  background-color: $background-color-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link--active {
+  color: $accent-color-blue;
+}
+
+img {
+  display: block;
+}
+
+.title {
+  color: $font-color-title;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.text {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
